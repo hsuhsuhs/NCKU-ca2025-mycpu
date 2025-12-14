@@ -1,0 +1,8 @@
+RISCOF=riscof
+CONFIG=../tests/config-2-mmio-trap.ini
+SUITE=../tests/riscv-arch-test/riscv-test-suite/rv32i_m/I
+ENV=../tests/mycpu_plugin/env
+WORK=../tests/riscof_work_2mmio
+
+compliance:
+	$(RISCOF) run --config $(CONFIG) --suite $(SUITE) --env $(ENV) --work-dir $(WORK)

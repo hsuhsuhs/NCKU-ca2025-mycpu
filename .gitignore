@@ -1,0 +1,7 @@
+target/
+test_run_dir/
+project/target/
+.DS_Store
+.bsp/
+.metals/
+*.vcd
